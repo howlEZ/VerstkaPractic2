@@ -1,0 +1,43 @@
+.Grid2__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+@media (min-width: 375px) {
+  .Grid2__body {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1440px) {
+  .Grid2__body {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.Grid2__body-item {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Grid2__body-item img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.Grid2__body-item h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0 5px;
+}
+.Grid2__body-item p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
+  color: gray;
+}/*# sourceMappingURL=Grid2.css.map */

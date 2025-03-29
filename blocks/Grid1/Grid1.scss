@@ -1,0 +1,56 @@
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;
+
+@mixin respond-to($breakpoint) {
+        @media (min-width: $breakpoint) {
+          @content;
+        }
+      }
+
+.Grid1{
+    &__body{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        max-width: 1000px;
+        margin: auto;
+
+        @include respond-to($breakpoint-mobile) {
+            flex-direction: column;
+            grid-template-columns: 1fr;
+          }
+          @include respond-to($breakpoint-desktop) {
+            grid-template-columns: 2fr 1fr;
+          }
+
+        &-item1{
+            grid-row: span 2;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+
+        &-item2{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+
+        &-item3{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+    }
+}
+}

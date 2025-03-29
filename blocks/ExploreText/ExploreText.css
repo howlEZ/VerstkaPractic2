@@ -1,0 +1,24 @@
+.ExploreText {
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: 17%;
+  margin-right: 15%;
+}
+.ExploreText__left-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 5%;
+}
+.ExploreText__right-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: initial;
+  font-size: 20px;
+  color: grey;
+}
+.ExploreText__right-img {
+  width: 70%;
+  height: 70%;
+}/*# sourceMappingURL=ExploreText.css.map */
